@@ -6,6 +6,13 @@ using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NArchitecture.Core.Security.Constants;
+using Application.Features.Agencies.Constants;
+using Application.Features.Routes.Constants;
+using Application.Features.ServiceCalendars.Constants;
+using Application.Features.Shapes.Constants;
+using Application.Features.Stops.Constants;
+using Application.Features.StopTimes.Constants;
+using Application.Features.Trips.Constants;
 
 namespace Persistence.EntityConfigurations;
 
@@ -97,6 +104,104 @@ public class OperationClaimConfiguration : IEntityTypeConfiguration<OperationCla
         );
         #endregion
 
+        
+        #region Agencies CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = AgenciesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = AgenciesOperationClaims.Read },
+                new() { Id = ++lastId, Name = AgenciesOperationClaims.Write },
+                new() { Id = ++lastId, Name = AgenciesOperationClaims.Create },
+                new() { Id = ++lastId, Name = AgenciesOperationClaims.Update },
+                new() { Id = ++lastId, Name = AgenciesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Routes CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = RoutesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = RoutesOperationClaims.Read },
+                new() { Id = ++lastId, Name = RoutesOperationClaims.Write },
+                new() { Id = ++lastId, Name = RoutesOperationClaims.Create },
+                new() { Id = ++lastId, Name = RoutesOperationClaims.Update },
+                new() { Id = ++lastId, Name = RoutesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region ServiceCalendars CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = ServiceCalendarsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = ServiceCalendarsOperationClaims.Read },
+                new() { Id = ++lastId, Name = ServiceCalendarsOperationClaims.Write },
+                new() { Id = ++lastId, Name = ServiceCalendarsOperationClaims.Create },
+                new() { Id = ++lastId, Name = ServiceCalendarsOperationClaims.Update },
+                new() { Id = ++lastId, Name = ServiceCalendarsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Shapes CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = ShapesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = ShapesOperationClaims.Read },
+                new() { Id = ++lastId, Name = ShapesOperationClaims.Write },
+                new() { Id = ++lastId, Name = ShapesOperationClaims.Create },
+                new() { Id = ++lastId, Name = ShapesOperationClaims.Update },
+                new() { Id = ++lastId, Name = ShapesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Stops CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StopsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StopsOperationClaims.Read },
+                new() { Id = ++lastId, Name = StopsOperationClaims.Write },
+                new() { Id = ++lastId, Name = StopsOperationClaims.Create },
+                new() { Id = ++lastId, Name = StopsOperationClaims.Update },
+                new() { Id = ++lastId, Name = StopsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region StopTimes CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StopTimesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StopTimesOperationClaims.Read },
+                new() { Id = ++lastId, Name = StopTimesOperationClaims.Write },
+                new() { Id = ++lastId, Name = StopTimesOperationClaims.Create },
+                new() { Id = ++lastId, Name = StopTimesOperationClaims.Update },
+                new() { Id = ++lastId, Name = StopTimesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Trips CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = TripsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = TripsOperationClaims.Read },
+                new() { Id = ++lastId, Name = TripsOperationClaims.Write },
+                new() { Id = ++lastId, Name = TripsOperationClaims.Create },
+                new() { Id = ++lastId, Name = TripsOperationClaims.Update },
+                new() { Id = ++lastId, Name = TripsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
         return featureOperationClaims;
     }
 #pragma warning restore S1854 // Unused assignments should be removed

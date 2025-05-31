@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using Application.Services.AuthenticatorService;
 using Application.Services.AuthService;
 using Application.Services.UsersService;
@@ -20,6 +20,13 @@ using NArchitecture.Core.Mailing;
 using NArchitecture.Core.Mailing.MailKit;
 using NArchitecture.Core.Security.DependencyInjection;
 using NArchitecture.Core.Security.JWT;
+using Application.Services.Agencies;
+using Application.Services.Routes;
+using Application.Services.ServiceCalendars;
+using Application.Services.Shapes;
+using Application.Services.Stops;
+using Application.Services.StopTimes;
+using Application.Services.Trips;
 
 namespace Application;
 
@@ -61,6 +68,13 @@ public static class ApplicationServiceRegistration
 
         services.AddSecurityServices<Guid, int, Guid>(tokenOptions);
 
+        services.AddScoped<IAgencyService, AgencyManager>();
+        services.AddScoped<IRouteService, RouteManager>();
+        services.AddScoped<IServiceCalendarService, ServiceCalendarManager>();
+        services.AddScoped<IShapeService, ShapeManager>();
+        services.AddScoped<IStopService, StopManager>();
+        services.AddScoped<IStopTimeService, StopTimeManager>();
+        services.AddScoped<ITripService, TripManager>();
         return services;
     }
 
