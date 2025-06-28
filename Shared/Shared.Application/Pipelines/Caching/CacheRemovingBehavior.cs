@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 using System.Text;
 using System.Text.Json;
 
-namespace Shared.Applicaton.Pipelines.Caching;
+namespace Shared.Application.Pipelines.Caching;
 
 public class CacheRemovingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>, ICacheRemoverRequest
 {

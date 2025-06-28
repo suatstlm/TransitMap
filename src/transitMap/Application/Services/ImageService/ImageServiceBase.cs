@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using NArchitecture.Core.CrossCuttingConcerns.Exception.Types;
+using Shared.CrossCuttingConcerns.Exception.Types;
 
 namespace Application.Services.ImageService;
 

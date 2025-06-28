@@ -3,8 +3,8 @@ using Application.Features.Trips.Commands.Delete;
 using Application.Features.Trips.Commands.Update;
 using Application.Features.Trips.Queries.GetById;
 using Application.Features.Trips.Queries.GetList;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;

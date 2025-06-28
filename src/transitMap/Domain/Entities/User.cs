@@ -1,6 +1,8 @@
-﻿namespace Domain.Entities;
+﻿using Shared.Security.Entities;
 
-public class User : NArchitecture.Core.Security.Entities.User<Guid>
+namespace Domain.Entities;
+
+public class User : User<Guid>
 {
     public virtual ICollection<UserOperationClaim> UserOperationClaims { get; set; } = default!;
     public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = default!;

@@ -2,11 +2,11 @@ using Application.Features.Stops.Constants;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
-using NArchitecture.Core.Application.Pipelines.Authorization;
-using NArchitecture.Core.Application.Pipelines.Caching;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
-using NArchitecture.Core.Persistence.Paging;
+using Shared.Application.Pipelines.Authorization;
+using Shared.Application.Pipelines.Caching;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
+using Shared.Persistence.Paging;
 using MediatR;
 using static Application.Features.Stops.Constants.StopsOperationClaims;
 

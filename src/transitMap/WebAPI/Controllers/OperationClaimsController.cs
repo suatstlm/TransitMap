@@ -4,8 +4,8 @@ using Application.Features.OperationClaims.Commands.Update;
 using Application.Features.OperationClaims.Queries.GetById;
 using Application.Features.OperationClaims.Queries.GetList;
 using Microsoft.AspNetCore.Mvc;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
 
 namespace WebAPI.Controllers;
 

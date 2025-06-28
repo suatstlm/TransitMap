@@ -1,9 +1,9 @@
-﻿using CrossCuttingConcerns.Exception.Types;
+﻿using Shared.CrossCuttingConcerns.Exception.Types;
 using FluentValidation;
 using FluentValidation.Results;
 using MediatR;
 
-namespace Shared.Applicaton.Pipelines.Validation;
+namespace Shared.Application.Pipelines.Validation;
 
 public class RequestValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
 {

@@ -1,4 +1,4 @@
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Responses;
 
 namespace Application.Features.Routes.Commands.Delete;
 

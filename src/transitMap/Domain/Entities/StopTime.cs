@@ -1,4 +1,4 @@
-﻿using NArchitecture.Core.Persistence.Repositories;
+﻿using Shared.Persistence.Repositories;
 
 namespace Domain.Entities;
 

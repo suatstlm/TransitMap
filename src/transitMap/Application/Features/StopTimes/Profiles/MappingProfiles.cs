@@ -4,9 +4,9 @@ using Application.Features.StopTimes.Commands.Update;
 using Application.Features.StopTimes.Queries.GetById;
 using Application.Features.StopTimes.Queries.GetList;
 using AutoMapper;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Responses;
 using Domain.Entities;
-using NArchitecture.Core.Persistence.Paging;
+using Shared.Persistence.Paging;
 
 namespace Application.Features.StopTimes.Profiles;
 

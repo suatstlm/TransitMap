@@ -4,9 +4,9 @@ using Application.Features.ServiceCalendars.Commands.Update;
 using Application.Features.ServiceCalendars.Queries.GetById;
 using Application.Features.ServiceCalendars.Queries.GetList;
 using AutoMapper;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Responses;
 using Domain.Entities;
-using NArchitecture.Core.Persistence.Paging;
+using Shared.Persistence.Paging;
 
 namespace Application.Features.ServiceCalendars.Profiles;
 

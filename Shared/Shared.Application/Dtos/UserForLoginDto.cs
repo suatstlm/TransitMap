@@ -1,4 +1,4 @@
-﻿namespace Shared.Applicaton.Dtos;
+﻿namespace Shared.Application.Dtos;
 
 public class UserForLoginDto : IDto
 {

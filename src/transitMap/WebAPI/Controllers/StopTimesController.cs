@@ -3,8 +3,8 @@ using Application.Features.StopTimes.Commands.Delete;
 using Application.Features.StopTimes.Commands.Update;
 using Application.Features.StopTimes.Queries.GetById;
 using Application.Features.StopTimes.Queries.GetList;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;

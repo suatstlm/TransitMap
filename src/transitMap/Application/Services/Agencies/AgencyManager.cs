@@ -1,6 +1,6 @@
 using Application.Features.Agencies.Rules;
 using Application.Services.Repositories;
-using NArchitecture.Core.Persistence.Paging;
+using Shared.Persistence.Paging;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore.Query;
 using System.Linq.Expressions;

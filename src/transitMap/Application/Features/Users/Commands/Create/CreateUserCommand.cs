@@ -4,8 +4,8 @@ using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
-using NArchitecture.Core.Application.Pipelines.Authorization;
-using NArchitecture.Core.Security.Hashing;
+using Shared.Application.Pipelines.Authorization;
+using Shared.Security.Hashing;
 using static Application.Features.Users.Constants.UsersOperationClaims;
 
 namespace Application.Features.Users.Commands.Create;

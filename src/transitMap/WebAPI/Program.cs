@@ -3,18 +3,18 @@ using Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using NArchitecture.Core.CrossCuttingConcerns.Exception.WebApi.Extensions;
-using NArchitecture.Core.CrossCuttingConcerns.Logging.Configurations;
-using NArchitecture.Core.ElasticSearch.Models;
-using NArchitecture.Core.Localization.WebApi;
-using NArchitecture.Core.Mailing;
-using NArchitecture.Core.Persistence.WebApi;
-using NArchitecture.Core.Security.Encryption;
-using NArchitecture.Core.Security.JWT;
-using NArchitecture.Core.Security.WebApi.Swagger.Extensions;
+using Shared.CrossCuttingConcerns.Logging.Configurations;
+using Shared.ElasticSearch.Models;
+using Shared.Mailing;
+using Shared.Security.Encryption;
+using Shared.Security.JWT;
 using Persistence;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using WebAPI;
+using Shared.Security.Extensions;
+using Shared.CrossCuttingConcerns.Middleware;
+using Shared.Persistence.DependencyInjection;
+using Shared.Localizations.Extensions;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 

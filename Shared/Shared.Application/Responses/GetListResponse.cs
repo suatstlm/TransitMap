@@ -1,6 +1,6 @@
-﻿using Persistence.Paging;
+﻿using Shared.Persistence.Paging;
 
-namespace Shared.Applicaton.Responses;
+namespace Shared.Application.Responses;
 public class GetListResponse<T> : BasePageableModel
 {
     private IList<T>? _items;

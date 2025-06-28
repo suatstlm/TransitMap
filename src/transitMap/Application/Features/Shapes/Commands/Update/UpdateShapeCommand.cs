@@ -3,10 +3,10 @@ using Application.Features.Shapes.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
-using NArchitecture.Core.Application.Pipelines.Authorization;
-using NArchitecture.Core.Application.Pipelines.Caching;
-using NArchitecture.Core.Application.Pipelines.Logging;
-using NArchitecture.Core.Application.Pipelines.Transaction;
+using Shared.Application.Pipelines.Authorization;
+using Shared.Application.Pipelines.Caching;
+using Shared.Application.Pipelines.Logging;
+using Shared.Application.Pipelines.Transaction;
 using MediatR;
 using static Application.Features.Shapes.Constants.ShapesOperationClaims;
 

@@ -1,5 +1,5 @@
 using Domain.Entities;
-using NArchitecture.Core.Application.Dtos;
+using Shared.Application.Dtos;
 
 namespace Application.Features.StopTimes.Queries.GetList;
 

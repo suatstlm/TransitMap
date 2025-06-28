@@ -1,10 +1,10 @@
 using Application.Features.Users.Constants;
 using Application.Services.Repositories;
 using Domain.Entities;
-using NArchitecture.Core.Application.Rules;
-using NArchitecture.Core.CrossCuttingConcerns.Exception.Types;
-using NArchitecture.Core.Localization.Abstraction;
-using NArchitecture.Core.Security.Hashing;
+using Shared.Application.Rules;
+using Shared.CrossCuttingConcerns.Exception.Types;
+using Shared.Localizations.Abstraction;
+using Shared.Security.Hashing;
 
 namespace Application.Features.Users.Rules;
 

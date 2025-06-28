@@ -4,9 +4,9 @@ using Application.Features.Routes.Commands.Update;
 using Application.Features.Routes.Queries.GetById;
 using Application.Features.Routes.Queries.GetList;
 using AutoMapper;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Responses;
 using Domain.Entities;
-using NArchitecture.Core.Persistence.Paging;
+using Shared.Persistence.Paging;
 
 namespace Application.Features.Routes.Profiles;
 

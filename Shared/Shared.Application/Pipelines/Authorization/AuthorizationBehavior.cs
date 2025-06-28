@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
-using CrossCuttingConcerns.Exception.Types;
-using Securty.Extensions;
+using Shared.CrossCuttingConcerns.Exception.Types;
+using Shared.Security.Extensions;
 
-namespace Shared.Applicaton.Pipelines.Authorization;
+namespace Shared.Application.Pipelines.Authorization;
 
 public class AuthorizationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>, ISecuredRequest
 {

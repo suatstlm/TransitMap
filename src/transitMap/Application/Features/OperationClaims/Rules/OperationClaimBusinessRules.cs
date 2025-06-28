@@ -1,9 +1,9 @@
 using Application.Features.OperationClaims.Constants;
 using Application.Services.Repositories;
 using Domain.Entities;
-using NArchitecture.Core.Application.Rules;
-using NArchitecture.Core.CrossCuttingConcerns.Exception.Types;
-using NArchitecture.Core.Localization.Abstraction;
+using Shared.Application.Rules;
+using Shared.CrossCuttingConcerns.Exception.Types;
+using Shared.Localizations.Abstraction;
 
 namespace Application.Features.OperationClaims.Rules;
 

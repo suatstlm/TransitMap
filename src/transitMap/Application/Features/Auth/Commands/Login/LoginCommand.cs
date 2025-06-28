@@ -4,9 +4,9 @@ using Application.Services.AuthService;
 using Application.Services.UsersService;
 using Domain.Entities;
 using MediatR;
-using NArchitecture.Core.Application.Dtos;
-using NArchitecture.Core.Security.Enums;
-using NArchitecture.Core.Security.JWT;
+using Shared.Application.Dtos;
+using Shared.Security.Enums;
+using Shared.Security.JWT;
 
 namespace Application.Features.Auth.Commands.Login;
 

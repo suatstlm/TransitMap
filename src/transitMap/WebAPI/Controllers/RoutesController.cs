@@ -3,8 +3,8 @@ using Application.Features.Routes.Commands.Delete;
 using Application.Features.Routes.Commands.Update;
 using Application.Features.Routes.Queries.GetById;
 using Application.Features.Routes.Queries.GetList;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;

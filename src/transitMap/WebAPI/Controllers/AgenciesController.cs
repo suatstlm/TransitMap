@@ -3,8 +3,8 @@ using Application.Features.Agencies.Commands.Delete;
 using Application.Features.Agencies.Commands.Update;
 using Application.Features.Agencies.Queries.GetById;
 using Application.Features.Agencies.Queries.GetList;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;

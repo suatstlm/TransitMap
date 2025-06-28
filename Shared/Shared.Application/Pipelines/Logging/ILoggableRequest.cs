@@ -1,4 +1,4 @@
-﻿namespace Shared.Applicaton.Pipelines.Logging;
+﻿namespace Shared.Application.Pipelines.Logging;
 public interface ILoggableRequest
 {
 }

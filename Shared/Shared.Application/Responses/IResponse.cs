@@ -1,4 +1,4 @@
-﻿namespace Shared.Applicaton.Responses;
+﻿namespace Shared.Application.Responses;
 
 public interface IResponse
 {

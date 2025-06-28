@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Query;
+using Shared.Persistence.Paging;
 using System.Linq.Expressions;
 
 namespace Shared.Persistence.Repositories;

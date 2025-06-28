@@ -1,4 +1,4 @@
-﻿namespace Shared.Applicaton.Rules;
+﻿namespace Shared.Application.Rules;
 public abstract class BaseBusinessRules
 {
 }

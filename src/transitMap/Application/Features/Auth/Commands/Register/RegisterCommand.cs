@@ -3,9 +3,9 @@ using Application.Services.AuthService;
 using Application.Services.Repositories;
 using Domain.Entities;
 using MediatR;
-using NArchitecture.Core.Application.Dtos;
-using NArchitecture.Core.Security.Hashing;
-using NArchitecture.Core.Security.JWT;
+using Shared.Application.Dtos;
+using Shared.Security.Hashing;
+using Shared.Security.JWT;
 
 namespace Application.Features.Auth.Commands.Register;
 

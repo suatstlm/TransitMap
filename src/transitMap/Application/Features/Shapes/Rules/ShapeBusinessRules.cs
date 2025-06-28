@@ -1,8 +1,8 @@
 using Application.Features.Shapes.Constants;
 using Application.Services.Repositories;
-using NArchitecture.Core.Application.Rules;
-using NArchitecture.Core.CrossCuttingConcerns.Exception.Types;
-using NArchitecture.Core.Localization.Abstraction;
+using Shared.Application.Rules;
+using Shared.CrossCuttingConcerns.Exception.Types;
+using Shared.Localizations.Abstraction;
 using Domain.Entities;
 
 namespace Application.Features.Shapes.Rules;

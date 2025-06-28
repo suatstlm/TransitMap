@@ -1,5 +1,5 @@
 using Domain.Entities;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Responses;
 
 namespace Application.Features.Shapes.Commands.Update;
 

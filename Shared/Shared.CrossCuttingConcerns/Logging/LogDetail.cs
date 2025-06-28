@@ -1,6 +1,4 @@
-﻿using Shared.CrossCuttingConcerns.Logging;
-
-namespace Applicaton.Pipelines.Logging;
+﻿namespace Shared.CrossCuttingConcerns.Logging;
 
 public class LogDetail
 {

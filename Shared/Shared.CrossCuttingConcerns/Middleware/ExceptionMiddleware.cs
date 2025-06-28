@@ -1,9 +1,9 @@
-﻿using Applicaton.Pipelines.Logging;
-using Shared.CrossCuttingConcerns.Handlers;
+﻿using Shared.CrossCuttingConcerns.Handlers;
 using Shared.CrossCuttingConcerns.Logging.Abstraction;
 using Microsoft.AspNetCore.Http;
 using System.Runtime.InteropServices;
 using System.Text.Json;
+using Shared.CrossCuttingConcerns.Logging;
 
 namespace Shared.CrossCuttingConcerns.Middleware;
 public class ExceptionMiddleware

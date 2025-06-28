@@ -5,8 +5,8 @@ using Application.Features.UserOperationClaims.Queries.GetById;
 using Application.Features.UserOperationClaims.Queries.GetList;
 using AutoMapper;
 using Domain.Entities;
-using NArchitecture.Core.Application.Responses;
-using NArchitecture.Core.Persistence.Paging;
+using Shared.Application.Responses;
+using Shared.Persistence.Paging;
 
 namespace Application.Features.UserOperationClaims.Profiles;
 

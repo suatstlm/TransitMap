@@ -3,8 +3,8 @@ using Application.Features.ServiceCalendars.Commands.Delete;
 using Application.Features.ServiceCalendars.Commands.Update;
 using Application.Features.ServiceCalendars.Queries.GetById;
 using Application.Features.ServiceCalendars.Queries.GetList;
-using NArchitecture.Core.Application.Requests;
-using NArchitecture.Core.Application.Responses;
+using Shared.Application.Requests;
+using Shared.Application.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers;

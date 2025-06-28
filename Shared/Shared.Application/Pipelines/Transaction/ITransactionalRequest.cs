@@ -1,4 +1,4 @@
-﻿namespace Shared.Applicaton.Pipelines.Transaction;
+﻿namespace Shared.Application.Pipelines.Transaction;
 
 public interface ITransactionalRequest
 {

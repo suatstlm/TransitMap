@@ -5,7 +5,7 @@ using Application.Features.Users.Constants;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NArchitecture.Core.Security.Constants;
+using Shared.Security.Constants;
 using Application.Features.Agencies.Constants;
 using Application.Features.Routes.Constants;
 using Application.Features.ServiceCalendars.Constants;

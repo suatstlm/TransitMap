@@ -1,7 +1,7 @@
 ﻿using Application.Services.Repositories;
 using Domain.Entities;
-using NArchitecture.Core.Persistence.Repositories;
 using Persistence.Contexts;
+using Shared.Persistence.Repositories;
 
 namespace Persistence.Repositories;
 

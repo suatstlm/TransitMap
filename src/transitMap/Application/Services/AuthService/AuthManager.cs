@@ -3,7 +3,7 @@ using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
 using Microsoft.Extensions.Configuration;
-using NArchitecture.Core.Security.JWT;
+using Shared.Security.JWT;
 
 namespace Application.Services.AuthService;
 
@@ -39,7 +39,7 @@ public class AuthManager : IAuthService
         IList<OperationClaim> operationClaims = await _userOperationClaimRepository.GetOperationClaimsByUserIdAsync(user.Id);
         AccessToken accessToken = _tokenHelper.CreateToken(
             user,
-            operationClaims.Select(op => (NArchitecture.Core.Security.Entities.OperationClaim<int>)op).ToImmutableList()
+            operationClaims.Select(op => (Shared.Security.Entities.OperationClaim<int>)op).ToImmutableList()
         );
         return accessToken;
     }
@@ -81,7 +81,7 @@ public class AuthManager : IAuthService
 
     public async Task<RefreshToken> RotateRefreshToken(User user, RefreshToken refreshToken, string ipAddress)
     {
-        NArchitecture.Core.Security.Entities.RefreshToken<Guid, Guid> newCoreRefreshToken = _tokenHelper.CreateRefreshToken(
+        RefreshToken<Guid, Guid> newCoreRefreshToken = _tokenHelper.CreateRefreshToken(
             user,
             ipAddress
         );
@@ -104,7 +104,7 @@ public class AuthManager : IAuthService
 
     public Task<RefreshToken> CreateRefreshToken(User user, string ipAddress)
     {
-        NArchitecture.Core.Security.Entities.RefreshToken<Guid, Guid> coreRefreshToken = _tokenHelper.CreateRefreshToken(
+        RefreshToken<Guid, Guid> coreRefreshToken = _tokenHelper.CreateRefreshToken(
             user,
             ipAddress
         );

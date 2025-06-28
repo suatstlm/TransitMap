@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using NArchitecture.Core.Security.Extensions;
+using Shared.Security.Extensions;
 
 namespace WebAPI.Controllers;
 

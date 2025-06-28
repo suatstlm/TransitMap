@@ -1,4 +1,4 @@
-﻿namespace Shared.Applicaton.Pipelines.Authorization;
+﻿namespace Shared.Application.Pipelines.Authorization;
 public interface ISecuredRequest
 {
     string[] Roles { get; }

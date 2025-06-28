@@ -3,7 +3,7 @@ using Application.Features.Shapes.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
-using NArchitecture.Core.Application.Pipelines.Authorization;
+using Shared.Application.Pipelines.Authorization;
 using MediatR;
 using static Application.Features.Shapes.Constants.ShapesOperationClaims;
 

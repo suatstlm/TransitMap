@@ -1,10 +1,10 @@
-﻿using CrossCuttingConcerns.Logging;
-using CrossCuttingConcerns.Logging.Abstraction;
+﻿using Shared.CrossCuttingConcerns.Logging;
+using Shared.CrossCuttingConcerns.Logging.Abstraction;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using System.Text.Json;
 
-namespace Shared.Applicaton.Pipelines.Logging;
+namespace Shared.Application.Pipelines.Logging;
 public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>, ILoggableRequest
 {
     private readonly IHttpContextAccessor _httpContextAccessor;

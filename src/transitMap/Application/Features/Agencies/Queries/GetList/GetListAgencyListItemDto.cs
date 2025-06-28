@@ -1,4 +1,4 @@
-using NArchitecture.Core.Application.Dtos;
+using Shared.Application.Dtos;
 
 namespace Application.Features.Agencies.Queries.GetList;
 
