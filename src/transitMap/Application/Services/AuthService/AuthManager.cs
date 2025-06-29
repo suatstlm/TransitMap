@@ -1,4 +1,5 @@
 ﻿using System.Collections.Immutable;
+using System.Runtime.InteropServices;
 using Application.Services.Repositories;
 using AutoMapper;
 using Domain.Entities;
@@ -81,7 +82,7 @@ public class AuthManager : IAuthService
 
     public async Task<RefreshToken> RotateRefreshToken(User user, RefreshToken refreshToken, string ipAddress)
     {
-        RefreshToken<Guid, Guid> newCoreRefreshToken = _tokenHelper.CreateRefreshToken(
+        Shared.Security.Entities.RefreshToken<Guid, Guid> newCoreRefreshToken = _tokenHelper.CreateRefreshToken(
             user,
             ipAddress
         );
@@ -104,7 +105,7 @@ public class AuthManager : IAuthService
 
     public Task<RefreshToken> CreateRefreshToken(User user, string ipAddress)
     {
-        RefreshToken<Guid, Guid> coreRefreshToken = _tokenHelper.CreateRefreshToken(
+        Shared.Security.Entities.RefreshToken<Guid, Guid> coreRefreshToken = _tokenHelper.CreateRefreshToken(
             user,
             ipAddress
         );
